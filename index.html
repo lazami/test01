@@ -1,10 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
 <head>
-    <title>Vast Mini UI Project ~ Miodrag Lazic</title>
+	<title>Vast Mini UI Project ~ Miodrag Lazic</title>
+
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
-    <div class="header"></div>
+	<header>
+		<div id="header">
+			<nav>
+				<ul id="mainMenu" class="clearfix">
+					<li><a href="#" title="Home">Home</a></li>
+					<li><a href="#" title="About">About</a></li>
+					<li><a href="#" title="Blog">Blog</a></li>
+					<li><a href="#" title="Contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div id="mainCnt" class="clearfix">
+		<h1 class="mainPageTitle">Lazami Web Page</h1>
+
+		<div id="mainCntLeft">
+			<article>
+
+				<h2 class="mainCntTitle">Article Title</h2>
+
+				<img class="mainCntImg" src="images/image01.jpg" alt="Image01" title="image01" />
+
+				<p><a class="tooltip">Lorem</a> ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec consequat arcu. Fusce eu rutrum eros, quis faucibus tellus. Vestibulum auctor, neque sed vehicula elementum, est risus consequat est, eget condimentum urna orci non erat. Integer sollicitudin odio nisl, in convallis augue auctor eget. Duis sapien risus, pulvinar nec dui id, iaculis molestie turpis. Praesent laoreet libero a mattis adipiscing. In sodales magna sed ante porta, nec mollis lectus congue. Praesent vel est id nulla ultricies ullamcorper ut a dui.</p>
+				<p>Sed tempor metus nec risus faucibus condimentum. Vivamus suscipit at odio non adipiscing. Nam porttitor metus in commodo aliquam. Quisque quam dui, volutpat ac quam ac, suscipit consequat mauris. Sed nec tortor lorem. Suspendisse potenti. Nulla in pharetra mauris. <a class="tooltip">Mauris</a> nec malesuada justo, eget pellentesque nisi. Mauris libero erat, gravida non tortor sed, dignissim pharetra sapien.</p>
+				<p>In interdum dui id condimentum rhoncus. Etiam sed sem dictum, auctor tellus sed, pulvinar dolor. Etiam suscipit tristique augue sed imperdiet. Donec pharetra libero sed sem ultricies, non pulvinar justo fringilla. Donec luctus vel nisi a venenatis. Etiam nulla purus, elementum venenatis leo ac, blandit adipiscing nulla. Morbi sem ante, rutrum in fermentum a, laoreet non mi. Nulla vel lacus fermentum, gravida libero sit amet, pretium nunc. Sed pulvinar ultrices viverra. Nullam rutrum dolor eget massa molestie, et euismod tellus ultricies. Fusce laoreet, urna ac pharetra venenatis, tortor metus rhoncus arcu, vel aliquam odio nisi et quam.</p>
+				<p>Quisque facilisis turpis vitae sem viverra porttitor. Donec imperdiet, lectus vitae luctus condimentum, justo metus vehicula sem, tristique tincidunt risus turpis mollis magna. Mauris viverra ultrices sapien, sed accumsan justo iaculis vitae. Morbi nec diam eget arcu dictum iaculis. Morbi lacus eros, interdum rhoncus leo a, dictum auctor nisi. Nullam eget enim justo. Sed tristique facilisis purus, sed blandit nunc viverra non. Nam pellentesque ultrices est vitae tincidunt. Ut iaculis diam nec magna pellentesque varius.</p>
+				<p>Aenean pharetra egestas ipsum vel dapibus. Vestibulum lacus eros, venenatis et malesuada id, consectetur vitae enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras dapibus mauris ut libero eleifend luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec bibendum imperdiet lectus et pellentesque. Vivamus neque orci, vestibulum eget purus ut, sollicitudin mattis velit. Maecenas posuere urna dolor, id lobortis elit feugiat et. Integer a consequat eros. Duis consectetur eu lectus quis blandit. Pellentesque id feugiat tortor. Nulla semper, metus pharetra rhoncus fermentum, tellus sapien egestas libero, at euismod ipsum lorem et tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus ultrices sit amet quam eu tincidunt. Phasellus eu posuere nisi.</p>
+
+			</article>
+		</div>
+
+		<div id="mainCntRight" class="clearfix">
+			<div class="loginFormCnt clearfix">
+				<form id="loginForm" name="loginForm" method="post" action="#">
+					<label for="loginUsername">E-mail:</label>
+					<input class="loginFormInputTxt" id="loginUsername" name="email" type="text" value="Your Email" />
+
+					<label>Password:</label>
+					<input class="loginFormInputTxt" id="loginPassword" name="password" type="password" />
+
+					<div class="formButtonWrapper right">
+						<input id="loginFormButton" class="formButton" type="submit" value="Login" />
+					</div>
+				</form>
+			</div>
+
+			<div class="searchFormCnt clearfix">
+				<form id="searchForm" name="searchForm" method="post" action="#">
+					<input class="searchFormInputTxt" id="searchValue" name="search" type="text" />
+
+					<div class="formButtonWrapper right">
+						<input id="loginFormButton" class="formButton" type="submit" value="Search" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div id="footer">
+			<ul id="footerMenu" class="clearfix">
+				<li><a href="#" title="Home">Home</a></li>
+				<li><a href="#" title="About">About</a></li>
+				<li><a href="#" title="Blog">Blog</a></li>
+				<li><a href="#" title="Contact">Contact</a></li>
+			</ul>
+
+			<p class="copyInfo">
+				2013 &copy; Lazami.com
+			</p>
+		</div>
+	</footer>
 </body>
 </html>
